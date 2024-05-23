@@ -1,0 +1,177 @@
+[
+    {
+        "commonality": "Common",
+        "version": "89",
+        "ua": "Mozilla/5.0 (Linux; Android 11; Pixel 4 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Mobile Safari/537.36",
+        "height": 820,
+        "width": 412,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "88",
+        "ua": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36",
+        "height": 800,
+        "width": 360,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "87",
+        "ua": "Mozilla/5.0 (Linux; Android 9; Nexus 6P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36",
+        "height": 900,
+        "width": 412,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "86",
+        "ua": "Mozilla/5.0 (Linux; Android 8.0.0; LG-M255) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36",
+        "height": 800,
+        "width": 360,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "85",
+        "ua": "Mozilla/5.0 (Linux; Android 7.1.2; Mi A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+        "height": 850,
+        "width": 411,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "14.0",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/126.0 Mobile/15E148 Safari/605.1.15",
+        "height": 812,
+        "width": 375,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "13.6",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.6 Mobile/15E148 Safari/604.1",
+        "height": 896,
+        "width": 414,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "12.4",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.4 Mobile/15E148 Safari/604.1",
+        "height": 812,
+        "width": 375,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "12.1",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1",
+        "height": 896,
+        "width": 414,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "11.4",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.4 Mobile/15E148 Safari/604.1",
+        "height": 812,
+        "width": 375,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "11.0",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+        "height": 812,
+        "width": 375,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "84",
+        "ua": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36",
+        "height": 750,
+        "width": 360,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "83",
+        "ua": "Mozilla/5.0 (Linux; Android 5.1.1; Nexus 7 Build/LMY48G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36",
+        "height": 603,
+        "width": 362,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "82",
+        "ua": "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4075.0 Mobile Safari/537.36",
+        "height": 640,
+        "width": 360,
+        "isMobile": true
+    },
+    {
+        "commonality": "Common",
+        "version": "10.3.3",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14G60 Safari/602.1",
+        "height": 736,
+        "width": 414,
+        "isMobile": true
+    },
+    {
+        "commonality": "Very common",
+        "version": "60",
+        "ua": "Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0",
+        "height": 920,
+        "width": 1390
+    },
+    {
+        "commonality": "Very common",
+        "version": "60",
+        "ua": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36",
+        "height": 760,
+        "width": 1280,
+        "isMobile": false
+    },
+    {
+        "commonality": "Very common",
+        "version": "44",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36",
+        "height": 920,
+        "width": 1390,
+        "isMobile": false
+    },
+    {
+        "commonality": "Very common",
+        "version": "11",
+        "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko",
+        "height": 920,
+        "width": 1390,
+        "isMobile": false
+    },
+    {
+        "commonality": "Common",
+        "version": "79",
+        "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+        "height": 1080,
+        "width": 1920,
+        "isMobile": false
+    },
+    {
+        "commonality": "Unknown",
+        "version": "99",
+        "ua": "Mozilla/5.0 (Unknown; Android 12; Unknown Device) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Mobile Safari/537.36",
+        "height": 896,
+        "width": 412,
+        "isMobile": true
+    },
+    {
+        "commonality": "Unknown",
+        "version": "100",
+        "ua": "Mozilla/5.0 (Unknown; Unknown OS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+        "height": 900,
+        "width": 1600,
+        "isMobile": false
+    }
+]
