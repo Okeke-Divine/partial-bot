@@ -1,6 +1,13 @@
 const puppeteer = require("puppeteer-extra")
 const StealthPlugin = require("puppeteer-extra-plugin-stealth")
 const userAgents = require("./UA.json")
+const tasks = require("./tasks.js")
+const dotenv = require("dotenv");
+dotenv.config();
+
+// const server_timezone = process.env.TIME_ZONE
+// console.log(server_timezone)
+// return;
 
 async function getRandomItem(arr) {
     if (!Array.isArray(arr) || arr.length === 0) {
@@ -21,10 +28,6 @@ async function runBot() {
 
     try {
         const url = "https://partial-test.vercel.app/";
-        newConsoleLine()
-
-        const proxy = await getRandomItem(proxies);
-        console.log(`Proxy: http://${proxy.username}:${proxy.password}@${proxy.host}:${proxy.port}`);
         newConsoleLine()
 
         const UA = await getRandomItem(userAgents);
@@ -48,6 +51,7 @@ async function runBot() {
 
         console.log("Browser Launched");
         newConsoleLine()
+
         const page = await browser.newPage();
         console.log("New page opending");
         newConsoleLine()
@@ -60,9 +64,12 @@ async function runBot() {
             width: UA.width,
             height: UA.height,
             isMobile: true,
-            hasTouch: UAtrue,
+            hasTouch: true,
             deviceScaleFactor: 2
         });
+
+        // configure the timezone
+        // await page.emulateTimezone(server_timezone);
 
         // Navigate to the website
         console.log("Loading url");
@@ -70,17 +77,55 @@ async function runBot() {
         await page.goto(url, { timeout: 0 });
         console.log(`${url} has been opened`)
         newConsoleLine()
-        // return
+
+
+
+
+
+        ////////ACTION
+        await tasks(page,'sleep');
+        await tasks(page,'scroll');
+        await tasks(page,'sleep');
+        await tasks(page,'clickAd');
+        await tasks(page,'sleep');
+        await tasks(page,'switchTab');
+        await tasks(page,'sleep');
+        await tasks(page,'scroll');
+        await tasks(page,'randomClick');
+        await tasks(page,'switchBack');
+        await tasks(page,'sleep');
+        await tasks(page,'scroll');
+        await tasks(page,'switchTab');
+        await tasks(page,'closeTab');
+        await tasks(page,'switchBack');
+        await tasks(page,'scroll');
+
+
+        ////////ACTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         console.log("Closing browser")
         newConsoleLine()
-        
-        await browser.close();
+
+        // await browser.close();
 
         console.log("Browser Closed")
         newConsoleLine()
         console.log(";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
-        runBot();
+        // runBot();
     } catch (e) {
         console.log(e);
     }
