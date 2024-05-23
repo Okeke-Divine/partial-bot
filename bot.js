@@ -40,7 +40,7 @@ async function runBot() {
 
         const browser = await puppeteer.launch(
             {
-                headless: false,
+                headless: 'new',
                 ignoreHTTPSErrors: true,
                 args: [`--disable-infobars`,
                     `--window-size=${UA.width},${UA.height}`,

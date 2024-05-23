@@ -30,7 +30,7 @@ async function scrollPage(page) {
         currentScroll = nextScroll;
 
         // Wait for the interval before scrolling to the next position
-        await sleep(Math.floor(Math.random() * (100 - 10 + 1)) + 10);
+        await sleep(Math.floor(Math.random() * (200 - 50 + 1)) + 50);
     }
     return;
 }
