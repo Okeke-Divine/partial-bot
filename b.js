@@ -3,11 +3,13 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth")
 const userAgents = require("./UA.json")
 puppeteer.use(StealthPlugin())
 
-const tasks = require("./tasks.js")
-const dotenv = require("dotenv");
-dotenv.config();
+// const tasks = require("./tasks.js")
+// const dotenv = require("dotenv");
+// dotenv.config();
 
-const server_timezone = process.env.TIME_ZONE
+// const server_timezone = process.env.TIME_ZONE
+// console.log(server_timezone)
+// return;
 
 async function getRandomItem(arr) {
     if (!Array.isArray(arr) || arr.length === 0) {
@@ -22,12 +24,10 @@ function newConsoleLine() {
     console.log("--------------")
 }
 
-
-const sleep = ms => new Promise(res => setTimeout(res, ms));
 let i = 1;
 
 async function runBot() {
-    console.log(server_timezone)
+
     try {
         const url = "https://partial-test.vercel.app/";
         newConsoleLine()
@@ -42,6 +42,7 @@ async function runBot() {
             {
                 headless: false,
                 ignoreHTTPSErrors: true,
+                //   defaultViewport: this.Device.resolution,
                 args: [`--disable-infobars`,
                     `--window-size=${UA.width},${UA.height}`,
                     '--disable-web-security',
@@ -72,7 +73,7 @@ async function runBot() {
         });
 
         // configure the timezone
-        await page.emulateTimezone(server_timezone);
+        // await page.emulateTimezone(server_timezone);
 
         // Navigate to the website
         console.log("Loading url");
@@ -81,30 +82,19 @@ async function runBot() {
         console.log(`${url} has been opened`)
         newConsoleLine()
 
+
+
+
+        await page.wa
+        await tasks(page, 'sleep');
+        return;
+
         ////////ACTION
-        var ms = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
-        console.log("Sleep for "+ms);
-        await sleep(ms);
-
+        await tasks(page, 'sleep');
         await tasks(page, 'scroll');
-        
-        var ms = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
-        console.log("Sleep for "+ms);
-        await sleep(ms);
-
-        await tasks(page, 'scroll');
-        
-        var ms = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
-        console.log("Sleep for "+ms);
-        await sleep(ms);
-
+        await tasks(page, 'sleep');
         await tasks(page, 'clickAd');
-        await tasks(page, 'scroll');
-        
-        var ms = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
-        console.log("Sleep for "+ms);
-        await sleep(ms);
-
+        await tasks(page, 'sleep');
         // await tasks(page, 'switchTab');
         // await tasks(page, 'sleep');
         // await tasks(page, 'scroll');
@@ -121,16 +111,29 @@ async function runBot() {
         ////////ACTION
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         console.log("Closing browser")
         newConsoleLine()
 
-        await browser.close();
+        // await browser.close();
 
         console.log("Browser Closed")
         newConsoleLine()
         console.log(";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
         i++;
-        runBot();
+        // runBot();
     } catch (e) {
         console.log(e);
     }
